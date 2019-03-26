@@ -36,6 +36,24 @@ import TimeInputCore from '@instructure/ui-core/lib/components/TimeInput'
 import ToggleDetailsCore from '@instructure/ui-core/lib/components/ToggleDetails'
 import TooltipCore from '@instructure/ui-core/lib/components/Tooltip'
 import TransitionCore from '@instructure/ui-core/lib/components/Transition'
+import TrayCore from '@instructure/ui-core/lib/components/Tray'
+import TreeBrowserCore from '@instructure/ui-core/lib/components/TreeBrowser'
+import AccessibleContentCore from '@instructure/ui-core/lib/components/AccessibleContent'
+import PresentationContentCore from '@instructure/ui-core/lib/components/PresentationContent'
+import ScreenReaderContentCore from '@instructure/ui-core/lib/components/ScreenReaderContent'
+import PaginationCore from '@instructure/ui-core/lib/components/Pagination'
+import MenuCore from '@instructure/ui-core/lib/components/Menu'
+import FormFieldCore from '@instructure/ui-core/lib/components/FormField'
+import FormFieldGroupCore from '@instructure/ui-core/lib/components/FormFieldGroup'
+import CheckboxCore from '@instructure/ui-core/lib/components/Checkbox'
+import CheckboxGroupCore from '@instructure/ui-core/lib/components/CheckboxGroup'
+import RadioInputCore from '@instructure/ui-core/lib/components/RadioInput'
+import RadioInputGroupCore from '@instructure/ui-core/lib/components/RadioInputGroup'
+import RangeInputCore from '@instructure/ui-core/lib/components/RangeInput'
+import FileDropCore from '@instructure/ui-core/lib/components/FileDrop'
+import TextAreaCore from '@instructure/ui-core/lib/components/TextArea'
+import TextInputCore from '@instructure/ui-core/lib/components/TextInput'
+import NumberInputCore from '@instructure/ui-core/lib/components/NumberInput'
 
 import NumberInputForms from '@instructure/ui-forms/lib/components/NumberInput'
 
@@ -81,7 +99,32 @@ const deprecatedComponents = [
   { Component: ToggleDetailsCore, origin: 'ui-core', props: { summary: 'hello' } },
   { Component: TooltipCore, origin: 'ui-core', props: { tip: 'hello', children: <button>click</button> } },
   { Component: TransitionCore, origin: 'ui-core', props: { children: <span>transition</span> } },
-  { Component: NumberInputForms, origin: 'ui-forms', props: { label: 'hello' } }
+  { Component: TrayCore, origin: 'ui-core', props: { label: 'hello'} },
+  { Component: TreeBrowserCore, origin: 'ui-core', props: {
+    collections: {id: 1},
+    items: {id: 1}
+  }},
+  { Component: AccessibleContentCore, origin: 'ui-core' },
+  { Component: PresentationContentCore, origin: 'ui-core' },
+  { Component: ScreenReaderContentCore, origin: 'ui-core' },
+  { Component: MenuCore, origin: 'ui-core'},
+  { Component: FormFieldCore, origin: 'ui-core', props: { label: 'hello', id: '1' } },
+  { Component: FormFieldGroupCore, origin: 'ui-core', props: { description: 'hi' } },
+  { Component: CheckboxCore, origin: 'ui-core', props: { label: 'hi' } },
+  { Component: CheckboxGroupCore, origin: 'ui-core', props: { name: 'hello', description: 'there' } },
+  { Component: RadioInputCore, origin: 'ui-core', props: { label: 'hello' } },
+  { Component: RadioInputGroupCore, origin: 'ui-core', props: { name: 'hello', description:'hi' } },
+  { Component: RangeInputCore, origin: 'ui-core', props: { label: 'hello' } },
+  { Component: FileDropCore, origin: 'ui-core', props: { label: 'hello' } },
+  { Component: TextAreaCore, origin: 'ui-core', props: { label: 'hello' } },
+  { Component: TextInputCore, origin: 'ui-core', props: { label: 'hello' } },
+  { Component: NumberInputCore, origin: 'ui-core', props: { label: 'hi' } },
+  
+
+
+
+
+  { Component: NumberInputForms, origin: 'ui-forms', props: { label: 'hello' } },
 ]
 
 export default deprecatedComponents
