@@ -1,28 +1,42 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+
+// eslint-disable-next-line no-unused-vars
+import theme from '@instructure/ui-themes/lib/canvas'
+
+import View from '@instructure/ui-layout/lib/components/View'
+import Heading from '@instructure/ui-elements/lib/components/Heading'
+
+import deprecatedComponents from './deprecatedComponents'
+import Example from './Example'
 
 class App extends Component {
-  render() {
+  render () {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+      <View
+        display="block"
+        padding="medium"
+      >
+        <Heading
+          level="h1"
+          as="h1"
+          margin="0 0 medium 0"
+        >
+          Components
+        </Heading>
+        {deprecatedComponents.map(({ Component, props, origin }) => {
+          return (
+            <Example
+              key={`${Component.displayName}--${origin}`}
+              displayName={Component.displayName}
+              origin={origin}
+            >
+              <Component {...(props || {})} />
+            </Example>
+          )
+        })}
+      </View>
+    )
   }
 }
 
-export default App;
+export default App
