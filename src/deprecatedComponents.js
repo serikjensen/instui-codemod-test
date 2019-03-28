@@ -61,6 +61,9 @@ import FormFieldGroupForms from '@instructure/ui-forms/lib/components/FormFieldG
 import FormFiledForms from '@instructure/ui-forms/lib/components/FormField'
 import NumberInputForms from '@instructure/ui-forms/lib/components/NumberInput'
 
+//ui-icons
+import { IconAddLine } from 'instructure-icons'
+
 const deprecatedComponents = [
   // ui-core
   { Component: AutocompleteCore, origin: 'ui-core', props: { label: 'hello' } },
@@ -128,6 +131,8 @@ const deprecatedComponents = [
   { Component: FormFieldGroupForms, origin: 'ui-forms', props: { description: 'hi' } },
   { Component: FormFiledForms, origin: 'ui-forms', props: { label: 'hello', id: '1' } },
   { Component: NumberInputForms, origin: 'ui-forms', props: { label: 'hello' } },
+  // ui-icons
+  { Component: IconAddLine, origin: 'instructure-icons'}
 ]
 
 export default deprecatedComponents
