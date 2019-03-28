@@ -1,5 +1,6 @@
 import React from 'react'
 
+// ui-core
 import AutocompleteCore from '@instructure/ui-core/lib/components/Autocomplete'
 import ApplyThemeCore from '@instructure/ui-core/lib/components/ApplyTheme'
 import ApplyLocaleCore from '@instructure/ui-core/lib/components/ApplyLocale'
@@ -55,6 +56,9 @@ import TextAreaCore from '@instructure/ui-core/lib/components/TextArea'
 import TextInputCore from '@instructure/ui-core/lib/components/TextInput'
 import NumberInputCore from '@instructure/ui-core/lib/components/NumberInput'
 
+//ui-forms
+import FormFieldGroupForms from '@instructure/ui-forms/lib/components/FormFieldGroup'
+import FormFiledForms from '@instructure/ui-forms/lib/components/FormField'
 import NumberInputForms from '@instructure/ui-forms/lib/components/NumberInput'
 
 const deprecatedComponents = [
@@ -107,6 +111,7 @@ const deprecatedComponents = [
   { Component: AccessibleContentCore, origin: 'ui-core' },
   { Component: PresentationContentCore, origin: 'ui-core' },
   { Component: ScreenReaderContentCore, origin: 'ui-core' },
+  { Component: PaginationCore, origin: 'ui-core'},
   { Component: MenuCore, origin: 'ui-core'},
   { Component: FormFieldCore, origin: 'ui-core', props: { label: 'hello', id: '1' } },
   { Component: FormFieldGroupCore, origin: 'ui-core', props: { description: 'hi' } },
@@ -119,11 +124,9 @@ const deprecatedComponents = [
   { Component: TextAreaCore, origin: 'ui-core', props: { label: 'hello' } },
   { Component: TextInputCore, origin: 'ui-core', props: { label: 'hello' } },
   { Component: NumberInputCore, origin: 'ui-core', props: { label: 'hi' } },
-  
-
-
-
-
+  // ui-forms
+  { Component: FormFieldGroupForms, origin: 'ui-forms', props: { description: 'hi' } },
+  { Component: FormFiledForms, origin: 'ui-forms', props: { label: 'hello', id: '1' } },
   { Component: NumberInputForms, origin: 'ui-forms', props: { label: 'hello' } },
 ]
 
