@@ -1,9 +1,9 @@
 import React from 'react'
-import SVGIcon from '@instructure/ui-svg-images/lib/components/SVGIcon'
+import SVGIcon from '@instructure/ui-core/lib/components/SVGIcon'
 
 export default function () {
 	return (
-		<SVGIcon 
+		<SVGIcon
 			width="10px"
 			height="10px"
 		/>
