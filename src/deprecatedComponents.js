@@ -63,6 +63,7 @@ import NumberInputForms from '@instructure/ui-forms/lib/components/NumberInput'
 
 //ui-icons
 import IconAddLine from 'instructure-icons/lib/Line/IconAddLine'
+import { IconCheckLine } from '@instructure/ui-icons'
 
 const deprecatedComponents = [
   // ui-core
@@ -132,7 +133,8 @@ const deprecatedComponents = [
   { Component: FormFiledForms, origin: 'ui-forms', props: { label: 'hello', id: '1' } },
   { Component: NumberInputForms, origin: 'ui-forms', props: { label: 'hello' } },
   // ui-icons
-  { Component: IconAddLine, origin: 'instructure-icons'}
+  { Component: IconAddLine, origin: 'instructure-icons'},
+  { Component: IconCheckLine, origin: 'instructure-icons'}
 ]
 
 export default deprecatedComponents
