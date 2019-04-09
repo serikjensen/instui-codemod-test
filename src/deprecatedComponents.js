@@ -63,7 +63,7 @@ import NumberInputForms from '@instructure/ui-forms/lib/components/NumberInput'
 
 //ui-icons
 import IconAddLine from 'instructure-icons/lib/Line/IconAddLine'
-import { IconCheckLine } from '@instructure/ui-icons'
+import { IconCheckLine } from 'instructure-icons'
 
 const deprecatedComponents = [
   // ui-core
