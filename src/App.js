@@ -15,7 +15,7 @@ import Mask from './deprecatedPropNameExamples/DeprecatedMask'
 import MenuItem from './deprecatedPropNameExamples/DeprecatedMenuItem'
 import Modal from './deprecatedPropNameExamples/DeprecatedModal'
 import Popover from './deprecatedPropNameExamples/DeprecatedPopover'
-import SVGIcon from '.deprecatedPropNameExamples/DeprecatedSVGIcon'
+// import SVGIcon from '.deprecatedPropNameExamples/DeprecatedSVGIcon'
 import Tray from './deprecatedPropNameExamples/DeprecatedTray'
 
 class App extends Component {
@@ -41,7 +41,6 @@ class App extends Component {
         <MenuItem />
         <Modal />
         <Popover />
-        <SVGIcon />
         <Tray />
 
         <Heading

@@ -5,6 +5,7 @@
   "dependencies": {
     "@instructure/ui-core": "^5.49.0",
     "@instructure/ui-forms": "5.49.0",
+    "@instructure/ui-themes": "^5.52.1",
     "instructure-icons": "^4.3.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.5",
