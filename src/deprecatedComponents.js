@@ -62,7 +62,7 @@ import FormFiledForms from '@instructure/ui-forms/lib/components/FormField'
 import NumberInputForms from '@instructure/ui-forms/lib/components/NumberInput'
 
 //ui-icons
-import { IconAddLine } from 'instructure-icons'
+import IconAddLine from 'instructure-icons/lib/Line/IconAddLine'
 
 const deprecatedComponents = [
   // ui-core
