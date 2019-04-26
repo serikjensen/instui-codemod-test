@@ -1,11 +1,11 @@
 import React from 'react'
-import Image from '@instructure/ui-core/lib/components/Image'
+import Img from '@instructure/ui-elements/lib/components/Img'
 
 export default function () {
   return (
     <div>
-      <Image cover />
-      <Image cover={false} />
+      <Img cover />
+      <Img cover={false} />
     </div>
   )
 }
