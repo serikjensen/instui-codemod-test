@@ -23,5 +23,10 @@
  */
 
 module.exports = {
-  presets: [require('@instructure/ui-babel-preset')]
+  presets: [
+    require('@instructure/ui-babel-preset')
+  ],
+  plugins: [
+    '@babel/plugin-proposal-export-default-from'
+  ]
 }

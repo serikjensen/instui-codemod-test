@@ -20,6 +20,7 @@
     "react-dom": "^16.9.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.8.3",
     "@instructure/ui-babel-preset": "^5.52.3",
     "@instructure/ui-eslint-config": "^5.52.3",
     "@instructure/ui-postcss-config": "^5.52.3",
