@@ -1,29 +1,33 @@
 {
-  "name": "instui-codemod-test",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@instructure/ui-core": "^5.49.0",
-    "@instructure/ui-forms": "5.49.0",
-    "@instructure/ui-themes": "^5.52.1",
-    "instructure-icons": "^4.3.2",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5",
-    "react-scripts": "2.1.8"
-  },
+  "name": "codemod-test",
+  "version": "1.0.0",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "tableflip": "rm -rf node_modules/ && yarn cache clean && yarn install"
+    "start": "ui-build --bundle --watch -p 3000",
+    "build": "ui-build --bundle",
+    "lint": "ui-test --lint",
+    "lint:fix": "ui-test --lint --fix",
+    "clean": "ui-build --clean",
+    "open:sandbox": "ui-scripts open-sandbox"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "@instructure/canvas-theme": "^6.18.0",
+    "@instructure/ui-heading": "^6.18.0",
+    "@instructure/ui-icons": "^6.18.0",
+    "@instructure/ui-layout": "^6.18.0",
+    "@instructure/ui-svg-images": "^6.18.0",
+    "@instructure/ui-text": "^6.18.0",
+    "@instructure/ui-themeable": "^6.18.0",
+    "@instructure/ui-view": "^6.18.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "devDependencies": {
+    "@instructure/ui-babel-preset": "^6.18.0",
+    "@instructure/ui-eslint-config": "^6.18.0",
+    "@instructure/ui-postcss-config": "^6.18.0",
+    "@instructure/ui-scripts": "^6.18.0",
+    "@instructure/ui-stylelint-config": "^6.18.0",
+    "@instructure/ui-webpack-config": "^6.18.0",
+    "html-webpack-plugin": "^3.2.0"
+  }
 }
