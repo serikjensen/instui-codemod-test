@@ -24,24 +24,24 @@
 
 import React, { Component } from 'react'
 
-import { themeable } from '@instructure/ui-themeable'
+import themeable from '@instructure/ui-themeable'
 
-import { Heading } from '@instructure/ui-heading'
-import { Text } from '@instructure/ui-text'
-import { View } from '@instructure/ui-view'
-import { IconCheckMarkSolid } from '@instructure/ui-icons'
+import Heading from '@instructure/ui-elements/lib/components/Heading'
+import Text from '@instructure/ui-elements/lib/components/Text'
+import View from '@instructure/ui-layout/lib/components/View'
+import IconCheckMarkSolid from '@instructure/ui-icons/lib/Solid/IconCheckMark'
 
 import Panda from './Panda'
 
 import styles from './styles.css'
 import theme from './theme.js'
 
+@themeable(theme, styles)
 class Banner extends Component {
   render () {
     return (
       <View
         as="main"
-        background="primary-inverse"
         padding="large medium none"
         minHeight="100%"
         textAlign="center"
@@ -49,7 +49,6 @@ class Banner extends Component {
         <View
           padding="small"
           display="inline-block"
-          background="success"
           borderRadius="large"
           shadow="topmost"
         >
@@ -75,4 +74,4 @@ class Banner extends Component {
   }
 }
 
-export default themeable(theme, styles)(Banner)
+export default Banner

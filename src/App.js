@@ -25,7 +25,8 @@
 import React from 'react'
 import Banner from './Banner'
 
-import '@instructure/canvas-theme'
+import theme from '@instructure/ui-themes/lib/canvas'
+theme.use()
 
 const App = () => <Banner />
 

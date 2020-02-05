@@ -23,7 +23,7 @@
  */
 
 import React from 'react'
-import { InlineSVG } from '@instructure/ui-svg-images'
+import InlineSVG from '@instructure/ui-svg-images/lib/components/InlineSVG'
 
 const baseStyles = {
   stroke: '#1f2930',
